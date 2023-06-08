@@ -59,7 +59,7 @@ class SavingsScreen extends StatelessWidget {
                               userController.message.value,
                               backgroundColor: userController.message.value.contains("Error") ? Colors.red : Colors.blue,
                               colorText: Colors.white,
-                              borderRadius: 10.0,
+                              borderRadius: 11.0,
                               snackPosition: SnackPosition.BOTTOM);
                         }
                       : null,
@@ -84,7 +84,7 @@ class SavingsScreen extends StatelessWidget {
                         'Sorry, you cannot save more than your current balance!',
                         backgroundColor: Colors.red,
                         colorText: Colors.white,
-                        borderRadius: 10.0,
+                        borderRadius: 11.0,
                         snackPosition: SnackPosition.BOTTOM);
                   } else
                     {
@@ -106,7 +106,7 @@ class SavingsScreen extends StatelessWidget {
                 },
                 child: Text('Save'),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 29),
               Center(
                 child: SizedBox(
                   width: 300,
@@ -131,7 +131,7 @@ class SavingsScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
                             ),
                           ),
-                          SizedBox(height: 30),
+                          SizedBox(height: 29),
                           Obx(
                                 () =>  Text(
                               'Amounts Borrowed: \$${userController.amount_borowed.value.toStringAsFixed(2)}',
@@ -139,19 +139,19 @@ class SavingsScreen extends StatelessWidget {
                             ),
                                 ),
 
-                          SizedBox(height: 10),
+                          SizedBox(height: 11),
                           Obx(() =>  Text(
                               'Amounts Saved : \$${userController.amount_saved.value.toStringAsFixed(2)}',
                               style: TextStyle(fontSize: 17, color: Colors.white),
                             ),
                           ),
-                          SizedBox(height: 10),
+                          SizedBox(height: 11),
                           Obx(() =>  Text(
                               'Current Balance: \$${userController.current_balance.value.toStringAsFixed(2)}',
                               style: TextStyle(fontSize: 17, color: Colors.white),
                             ),
                           ),
-                          SizedBox(height: 20),
+                          SizedBox(height: 22),
                         ],
                       ),
 
