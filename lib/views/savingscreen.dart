@@ -38,7 +38,7 @@ class SavingsScreen extends StatelessWidget {
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 22),
               Obx(
                 () => ElevatedButton(
                   onPressed: userController.account_existing.value
@@ -66,7 +66,7 @@ class SavingsScreen extends StatelessWidget {
                   child: Text('Borrow'),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 22),
               TextField(
                 controller: saveEditingController,
                 keyboardType: TextInputType.number,
@@ -75,7 +75,7 @@ class SavingsScreen extends StatelessWidget {
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 22),
               ElevatedButton(
                 onPressed: () async {
                   if (double.parse(saveEditingController.text) >
