@@ -11,7 +11,7 @@ class LogoutScreen extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Logout'),
         ),
-        body:  Container(
+         body:  Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/images/logout.jpg'),
@@ -30,6 +30,7 @@ class LogoutScreen extends StatelessWidget {
                         FontWeight.normal),
                   ),
                 ),
+
                 const SizedBox(height: 30),
                 Card(
                   elevation: 16.0,
