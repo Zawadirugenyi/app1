@@ -4,9 +4,9 @@ import 'package:get/get.dart';
 import '../controllers/money_controller.dart';
 
 class SavingsScreen extends StatelessWidget {
-  final userController = Get.put(MoneyController());
-  final saveEditingController = TextEditingController();
-  final borrowEditingController = TextEditingController();
+   final userController = Get.put(MoneyController());
+   final saveEditingController = TextEditingController();
+   final borrowEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -123,6 +123,7 @@ class SavingsScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(0.0),
                       ),
                       child: Column(
+
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Center(
