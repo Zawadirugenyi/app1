@@ -57,7 +57,7 @@ class SavingsScreen extends StatelessWidget {
                                   ? 'Error'
                                   : 'Success',
                               userController.message.value,
-                              backgroundColor: userController.message.value.contains("Error") ? Colors.red : Colors.blue,
+                              backgroundColor: userController.message.value.contains("Error") ? Color.fromARGB(255, 247, 20, 4) : Colors.blue,
                               colorText: Colors.white,
                               borderRadius: 11.0,
                               snackPosition: SnackPosition.BOTTOM);
@@ -82,7 +82,7 @@ class SavingsScreen extends StatelessWidget {
                       userController.current_balance.value) {
                     Get.snackbar('Error',
                         'Sorry, you cannot save more than your current balance!',
-                        backgroundColor: Colors.red,
+                        backgroundColor: Color.fromARGB(255, 250, 20, 4),
                         colorText: Colors.white,
                         borderRadius: 11.0,
                         snackPosition: SnackPosition.BOTTOM);
