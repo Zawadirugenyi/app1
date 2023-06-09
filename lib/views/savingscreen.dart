@@ -3,7 +3,12 @@ import 'package:get/get.dart';
 
 import '../controllers/money_controller.dart';
 
+
 class SavingsScreen extends StatelessWidget {
+   final userController = Get.put(MoneyController());
+   final saveEditingController = TextEditingController();
+   final borrowEditingController = TextEditingController();
+   class SavingsScreen extends StatelessWidget {
    final userController = Get.put(MoneyController());
    final saveEditingController = TextEditingController();
    final borrowEditingController = TextEditingController();
