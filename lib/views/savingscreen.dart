@@ -8,10 +8,7 @@ class SavingsScreen extends StatelessWidget {
    final userController = Get.put(MoneyController());
    final saveEditingController = TextEditingController();
    final borrowEditingController = TextEditingController();
-   class SavingsScreen extends StatelessWidget {
-   final userController = Get.put(MoneyController());
-   final saveEditingController = TextEditingController();
-   final borrowEditingController = TextEditingController();
+   
 
   @override
   Widget build(BuildContext context) {
